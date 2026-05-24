@@ -33,8 +33,8 @@ const emit = defineEmits<{ click: [e: MouseEvent] }>();
         'bg-danger text-white border-transparent hover:opacity-90 active:scale-[0.97]':
           variant === 'danger',
         'text-[13px] px-[10px] py-1 rounded-sm': size === 'sm',
-        'text-sm px-4 py-2 rounded-md':           size === 'md',
-        'text-base px-6 py-3 rounded-md':          size === 'lg',
+        'text-sm px-4 py-2 rounded-md': size === 'md',
+        'text-base px-6 py-3 rounded-md': size === 'lg',
         'opacity-50 cursor-not-allowed pointer-events-none': disabled || loading,
       },
     ]"
@@ -53,6 +53,7 @@ const emit = defineEmits<{ click: [e: MouseEvent] }>();
       <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" />
       <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z" />
     </svg>
+    <span v-if="loading" class="sr-only">Cargando…</span>
     <span v-if="iconLeft" aria-hidden="true">{{ iconLeft }}</span>
     <slot />
     <span v-if="iconRight" aria-hidden="true">{{ iconRight }}</span>

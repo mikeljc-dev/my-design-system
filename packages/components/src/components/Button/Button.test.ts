@@ -27,6 +27,11 @@ describe('Button', () => {
     expect(screen.getByRole('button')).toHaveAttribute('aria-busy', 'true');
   });
 
+  it('anuncia "Cargando…" a lectores de pantalla cuando loading=true', () => {
+    render(Button, { props: { loading: true } });
+    expect(screen.getByText('Cargando…')).toBeInTheDocument();
+  });
+
   it('aplica clases de danger correctamente', () => {
     render(Button, { props: { variant: 'danger' } });
     expect(screen.getByRole('button')).toHaveClass('bg-danger');
