@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { computed } from 'vue';
-import { useId } from '../../composables/useId';
+import { computed, useId } from 'vue';
 
 interface Props {
   modelValue?: string;
@@ -19,7 +18,7 @@ interface Props {
 const props = withDefaults(defineProps<Props>(), { rows: 4, resize: 'vertical' });
 const emit  = defineEmits<{ 'update:modelValue': [value: string] }>();
 
-const inputId = props.id ?? useId('ds-textarea');
+const inputId = props.id ?? useId();
 
 const charCount = computed(() => props.modelValue?.length ?? 0);
 </script>

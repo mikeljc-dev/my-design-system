@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { computed } from 'vue';
-import { useId } from '../../composables/useId';
+import { computed, useId } from 'vue';
 
 interface Props {
   modelValue?: boolean;
@@ -16,7 +15,7 @@ interface Props {
 const props = withDefaults(defineProps<Props>(), { modelValue: false, indeterminate: false });
 const emit  = defineEmits<{ 'update:modelValue': [value: boolean] }>();
 
-const inputId = props.id ?? useId('ds-checkbox');
+const inputId = props.id ?? useId();
 
 const ariaChecked = computed(() => {
   if (props.indeterminate) return 'mixed';

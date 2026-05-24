@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useId } from '../../composables/useId';
+import { useId } from 'vue';
 
 interface Props {
   modelValue?: string;
@@ -16,7 +16,7 @@ interface Props {
 const props = withDefaults(defineProps<Props>(), { type: 'text' });
 const emit = defineEmits<{ 'update:modelValue': [value: string] }>();
 
-const inputId = props.id ?? useId('ds-input');
+const inputId = props.id ?? useId();
 </script>
 
 <template>

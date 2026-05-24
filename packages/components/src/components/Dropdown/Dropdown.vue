@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { ref, computed, onMounted, onBeforeUnmount, nextTick } from 'vue';
-import { useId } from '../../composables/useId';
+import { ref, computed, onMounted, onBeforeUnmount, nextTick, useId } from 'vue';
 
 export interface DropdownItem {
   id: string;
@@ -26,7 +25,7 @@ const menuRef     = ref<HTMLElement | null>(null);
 const triggerRef  = ref<HTMLElement | null>(null);
 const activeIndex = ref(-1);
 
-const menuId = useId('ds-dropdown');
+const menuId = useId();
 
 const enabledItems = computed(() => props.items.filter(i => !i.separator && !i.disabled));
 

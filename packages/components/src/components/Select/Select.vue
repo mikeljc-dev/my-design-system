@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useId } from '../../composables/useId';
+import { useId } from 'vue';
 
 export interface SelectOption {
   value: string | number;
@@ -22,7 +22,7 @@ interface Props {
 const props = defineProps<Props>();
 const emit  = defineEmits<{ 'update:modelValue': [value: string | number] }>();
 
-const inputId = props.id ?? useId('ds-select');
+const inputId = props.id ?? useId();
 </script>
 
 <template>

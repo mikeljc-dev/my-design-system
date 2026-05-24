@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue';
-import { useId } from '../../composables/useId';
+import { ref, computed, useId } from 'vue';
 
 interface Props {
   content: string;
@@ -11,7 +10,7 @@ interface Props {
 const props = withDefaults(defineProps<Props>(), { placement: 'top', delay: 0 });
 
 const visible  = ref(false);
-const tooltipId = useId('ds-tooltip');
+const tooltipId = useId();
 let timer: ReturnType<typeof setTimeout>;
 
 function show() {

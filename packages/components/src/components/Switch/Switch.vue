@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useId } from '../../composables/useId';
+import { useId } from 'vue';
 
 interface Props {
   modelValue: boolean;
@@ -13,7 +13,7 @@ interface Props {
 const props = withDefaults(defineProps<Props>(), { size: 'md' });
 const emit  = defineEmits<{ 'update:modelValue': [value: boolean] }>();
 
-const switchId = props.id ?? useId('ds-switch');
+const switchId = props.id ?? useId();
 const labelId  = `${switchId}-label`;
 
 function toggle() {
