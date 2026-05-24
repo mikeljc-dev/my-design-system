@@ -7,7 +7,17 @@
     "coverage": "pnpm --filter @my-ds/ui coverage",
     "lint": "eslint packages/components/src apps/storybook/stories",
     "format": "prettier --write packages/components/src apps/storybook/stories",
-    "storybook": "pnpm --filter @my-ds/storybook dev"
+    "storybook": "pnpm --filter @my-ds/storybook dev",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{vue,ts}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,css}": [
+      "prettier --write"
+    ]
   },
   "packageManager": "pnpm@11.1.2",
   "devDependencies": {
@@ -17,6 +27,8 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-vue": "^10.9.1",
     "globals": "^17.6.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.5",
     "prettier": "^3.8.3",
     "turbo": "^2.9.14",
     "typescript": "^6.0.3",
