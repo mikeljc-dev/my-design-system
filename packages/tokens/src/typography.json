@@ -1,0 +1,28 @@
+{
+  "font": {
+    "family": {
+      "sans":  { "value": "Inter, system-ui, Arial, sans-serif" },
+      "mono":  { "value": "JetBrains Mono, Menlo, monospace" }
+    },
+    "size": {
+      "xs":   { "value": "12px" },
+      "sm":   { "value": "14px" },
+      "md":   { "value": "16px" },
+      "lg":   { "value": "20px" },
+      "xl":   { "value": "24px" },
+      "2xl":  { "value": "32px" },
+      "3xl":  { "value": "40px" }
+    },
+    "weight": {
+      "regular":   { "value": "400" },
+      "medium":    { "value": "500" },
+      "semibold":  { "value": "600" },
+      "bold":      { "value": "700" }
+    },
+    "line-height": {
+      "tight":   { "value": "1.25" },
+      "normal":  { "value": "1.5" },
+      "relaxed": { "value": "1.75" }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+import { Meta, ColorPalette, ColorItem, Typeset } from '@storybook/blocks';
+
+<Meta title="Fundación/Tokens" />
+
+# Tokens de diseño
+
+Los tokens son los valores fundamentales del Design System. Nunca uses valores crudos en los componentes — siempre a través de tokens semánticos.
+
+## Colores semánticos
+
+<ColorPalette>
+  <ColorItem title="Primary"      subtitle="--ds-color-semantic-primary"      colors={{ Default: '#3b82f6', Dark: '#1d4ed8' }} />
+  <ColorItem title="Danger"       subtitle="--ds-color-semantic-danger"       colors={{ Default: '#e24b4a', Dark: '#b91c1c' }} />
+  <ColorItem title="Success"      subtitle="--ds-color-semantic-success"      colors={{ Default: '#22c55e' }} />
+  <ColorItem title="Text"         subtitle="--ds-color-semantic-text-*"       colors={{ Default: '#111827', Muted: '#6b7280' }} />
+  <ColorItem title="Surface"      subtitle="--ds-color-semantic-surface"      colors={{ Default: '#f9fafb' }} />
+  <ColorItem title="Border"       subtitle="--ds-color-semantic-border"       colors={{ Default: '#e5e7eb' }} />
+</ColorPalette>
+
+## Tipografía
+
+<Typeset
+  fontSizes={[12, 14, 16, 20, 24, 32, 40]}
+  fontFamily="Inter, system-ui, Arial, sans-serif"
+  sampleText="El diseño es inteligencia hecha visible"
+/>
+
+## Espaciado (base 4px)
+
+| Token | Variable CSS | Valor |
+|---|---|---|
+| spacing-1  | `--ds-spacing-1`  | 4px  |
+| spacing-2  | `--ds-spacing-2`  | 8px  |
+| spacing-3  | `--ds-spacing-3`  | 12px |
+| spacing-4  | `--ds-spacing-4`  | 16px |
+| spacing-6  | `--ds-spacing-6`  | 24px |
+| spacing-8  | `--ds-spacing-8`  | 32px |
+| spacing-12 | `--ds-spacing-12` | 48px |
+| spacing-16 | `--ds-spacing-16` | 64px |
+
+## Radio de borde
+
+| Token   | Variable CSS        | Valor    |
+|---------|---------------------|----------|
+| none    | `--ds-radius-none`  | 0px      |
+| sm      | `--ds-radius-sm`    | 4px      |
+| md      | `--ds-radius-md`    | 8px      |
+| lg      | `--ds-radius-lg`    | 12px     |
+| xl      | `--ds-radius-xl`    | 16px     |
+| full    | `--ds-radius-full`  | 9999px   |

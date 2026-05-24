@@ -1,0 +1,37 @@
+{
+  "color": {
+    "primitive": {
+      "blue": {
+        "500": { "value": "#3b82f6" },
+        "700": { "value": "#1d4ed8" }
+      },
+      "gray": {
+        "50":  { "value": "#f9fafb" },
+        "100": { "value": "#f3f4f6" },
+        "200": { "value": "#e5e7eb" },
+        "500": { "value": "#6b7280" },
+        "900": { "value": "#111827" }
+      },
+      "red": {
+        "500": { "value": "#e24b4a" },
+        "700": { "value": "#b91c1c" }
+      },
+      "green": {
+        "500": { "value": "#22c55e" },
+        "700": { "value": "#15803d" }
+      },
+      "white": { "value": "#ffffff" }
+    },
+    "semantic": {
+      "primary":      { "value": "{color.primitive.blue.500}" },
+      "primary-dark": { "value": "{color.primitive.blue.700}" },
+      "danger":       { "value": "{color.primitive.red.500}" },
+      "danger-dark":  { "value": "{color.primitive.red.700}" },
+      "success":      { "value": "{color.primitive.green.500}" },
+      "text-default": { "value": "{color.primitive.gray.900}" },
+      "text-muted":   { "value": "{color.primitive.gray.500}" },
+      "surface":      { "value": "{color.primitive.gray.50}" },
+      "border":       { "value": "{color.primitive.gray.200}" }
+    }
+  }
+}

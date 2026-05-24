@@ -1,0 +1,24 @@
+{
+  "name": "@my-ds/storybook",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev":   "storybook dev -p 6006",
+    "build": "storybook build"
+  },
+  "dependencies": {
+    "@my-ds/ui":     "workspace:*",
+    "@my-ds/tokens": "workspace:*"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y":        "^8.6.12",
+    "@storybook/addon-essentials":  "^8.6.12",
+    "@storybook/addon-interactions":"^8.6.12",
+    "@storybook/blocks":            "^8.6.12",
+    "@storybook/vue3":              "^8.6.12",
+    "@storybook/vue3-vite":         "^8.6.12",
+    "storybook":                    "^8.6.12",
+    "vue":                          "^3.5.34"
+  }
+}
