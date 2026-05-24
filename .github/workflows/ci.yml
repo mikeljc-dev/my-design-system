@@ -31,9 +31,10 @@ jobs:
       - name: Coverage
         run: pnpm coverage
 
-      - name: Upload coverage report
-        uses: actions/upload-artifact@v4
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v5
         with:
-          name: coverage-report
-          path: packages/components/coverage/
-          retention-days: 7
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: packages/components/coverage/coverage-summary.json
+          flags: components
+          fail_ci_if_error: false

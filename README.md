@@ -8,7 +8,7 @@
   <a href="https://github.com/mikeljc-dev/my-design-system/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/mikeljc-dev/my-design-system/actions/workflows/ci.yml/badge.svg" /></a>
   <a href="https://mikeljc-dev.github.io/my-design-system"><img alt="Storybook" src="https://img.shields.io/badge/Storybook-Live-FF4785?logo=storybook&logoColor=white" /></a>
   <img alt="Tests" src="https://img.shields.io/badge/tests-200%20passed-22c55e" />
-  <img alt="Coverage" src="https://img.shields.io/badge/coverage-89%25-22c55e" />
+  <a href="https://codecov.io/gh/mikeljc-dev/my-design-system"><img alt="Coverage" src="https://codecov.io/gh/mikeljc-dev/my-design-system/graph/badge.svg?token=CODECOV_TOKEN" /></a>
   <img alt="Vue 3" src="https://img.shields.io/badge/Vue-3.x-4FC08D?logo=vue.js&logoColor=white" />
   <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white" />
   <img alt="License" src="https://img.shields.io/badge/license-MIT-gray" />
