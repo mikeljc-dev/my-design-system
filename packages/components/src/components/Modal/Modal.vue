@@ -101,11 +101,13 @@ onUnmounted(() => {
               <h2 v-if="title" id="ds-modal-title" class="text-lg font-semibold m-0">{{ title }}</h2>
               <slot name="header" />
               <button
-                class="ml-auto text-gray-400 hover:text-gray-900 text-2xl leading-none p-1 rounded-md transition-colors cursor-pointer bg-transparent border-none"
+                class="ml-auto text-gray-400 hover:text-gray-900 p-1 rounded-md transition-colors cursor-pointer bg-transparent border-none flex items-center justify-center"
                 aria-label="Cerrar modal"
                 @click="close"
               >
-                ×
+                <svg class="w-5 h-5" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                  <path d="M4 4l8 8M12 4l-8 8"/>
+                </svg>
               </button>
             </div>
 
