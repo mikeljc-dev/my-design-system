@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, provide, computed } from 'vue';
+import { provide, computed } from 'vue';
 
 export interface TabItem {
   id: string;

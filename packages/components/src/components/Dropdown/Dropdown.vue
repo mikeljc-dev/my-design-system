@@ -27,8 +27,6 @@ const activeIndex = ref(-1);
 
 const menuId = useId();
 
-const enabledItems = computed(() => props.items.filter(i => !i.separator && !i.disabled));
-
 const positionClasses = computed(() => ({
   'bottom-start': 'top-full left-0 mt-1',
   'bottom-end':   'top-full right-0 mt-1',

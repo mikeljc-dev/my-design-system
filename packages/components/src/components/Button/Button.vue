@@ -9,7 +9,7 @@ interface Props {
   as?: string | object;
 }
 
-const props = withDefaults(defineProps<Props>(), {
+withDefaults(defineProps<Props>(), {
   variant: 'primary',
   size: 'md',
   as: 'button',
